@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV19XR45YC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-QV19XR45YC');
@@ -156,19 +156,22 @@
     rel="stylesheet">
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WWB2564S');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WWB2564S');</script>
   <!-- End Google Tag Manager -->
 </head>
 
 <body class="bg-white text-slate-700 antialiased [overflow-anchor:none]">
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWB2564S"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWB2564S" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Header section -->
@@ -203,34 +206,66 @@
         <div class="w-full">
           <p class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-white">Airconditioning</p>
           <h1 class="mt-3 text-xl sm:text-3xl font-bold tracking-tight text-white">
-            Wat we doen? Alles voor uw binnen&shy;klimaat.
+            Wat wij verzorgen? Alles voor uw binnen&shy;klimaat.
           </h1>
           <p class="mt-4 text-sm sm:text-base font-medium text-white/90 leading-relaxed">
             Wij reageren altijd binnen 24 uur, installeren vakkundig en bieden de juiste service & onderhoud waar u naar
-            op zoek bent. Wij
-            garanderen volledige ontzorging door vriendelijke monteurs.
+            op zoek bent.
           </p>
 
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#usps" class="group h-auto inline-flex gap-2 items-center justify-center rounded-[5px] px-4 py-2 text-sm font-semibold
-                   bg-white/10 text-white focus:text-white/90 transition hover:opacity-90">
-              Lees meer
-              <span class="inline-block transition-transform duration-300 group-hover:translate-y-[1px]">
-                ↓
-              </span>
-            </a>
-            <a href="./offerte.html" class="group h-auto inline-flex gap-2 items-center justify-center rounded-[5px] px-4 py-2 text-sm font-semibold
-                   bg-white text-slate-700 focus:text-slate-600/90 transition hover:opacity-90">
-              Gratis offerte
-              <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">
-                →
-              </span>
-            </a>
+          <ul class="mt-4 space-y-2 text-white/90">
+            <li class="flex items-start gap-2">
+              <span
+                class="mt-1 text-xs inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">✓</span>
+              <span class="text-xs sm:text-sm font-medium text-white/90 leading-relaxed">Gratis advies bij u
+                thuis</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="mt-1 text-xs inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">✓</span>
+              <span class="text-xs sm:text-sm font-medium text-white/90 leading-relaxed">Binnen 24 uur reactie</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="mt-1 text-xs text-sm inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">✓</span>
+              <span class="text-xs sm:text-sm font-medium text-white/90 leading-relaxed">Lokale installateur uit
+                Zaandam</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span
+                class="mt-1 text-xs inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">✓</span>
+              <span class="text-xs sm:text-sm font-medium text-white/90 leading-relaxed">Voor woonkamer, slaapkamer of
+                meerdere ruimtes</span>
+            </li>
+          </ul>
+
+
+          <div class="flex flex-col gap-3">
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="./offerte.html" class="group w-full md:w-max h-auto inline-flex gap-2 items-center justify-center rounded-[5px] px-4 py-2 text-sm font-semibold
+                     bg-white text-slate-700 focus:text-slate-600/90 transition hover:opacity-90">
+                Gratis offerte aanvragen
+                <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
+              <a href="#usps" class="group w-full md:w-max h-auto inline-flex gap-2 items-center justify-center rounded-[5px] px-4 py-2 text-sm font-semibold
+                     bg-white/10 text-white focus:text-white/90 transition hover:opacity-90">
+                <span class="inline-block transition-transform duration-300 group-hover:-translate-x-1"
+                  aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z">
+                    </path>
+                  </svg>
+                </span>Bel ons! <span class="lg:hidden">Via 06-54216787</span>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Testimonials -->
-        <div class="relative max-w-sm" data-testimonials>
+        <div class="relative max-w-sm hidden lg:block" data-testimonials>
           <div class="pointer-events-none absolute"></div>
           <div class="relative flex flex-col gap-4">
             <div class="flex items-center justify-between gap-4">
@@ -328,9 +363,8 @@
               class="bg-[linear-gradient(to_right,var(--kz-blue),#b89a00)] bg-clip-text text-transparent text-nowrap">verwarm</span>
           </h4>
           <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-700">
-            Optimaliseer uw thuis&shy;klimaat met <span
-              class="inline-flex bg-[linear-gradient(to_right,var(--kz-darkerblue),var(--kz-blue))] bg-clip-text text-transparent text-nowrap">onze
-              airco's</span>
+            Wij optimaliseren uw <span
+              class="bg-[linear-gradient(to_right,var(--kz-darkerblue),var(--kz-blue))] bg-clip-text text-transparent">thuis&shy;klimaat</span>
           </h2>
         </div>
         <p class="text-sm sm:text-base font-medium leading-[2em] text-slate-700">
@@ -343,6 +377,16 @@
           professioneel onderhoud, volledig afgestemd op jouw woning en wensen.
         </p>
 
+      </div>
+
+      <!-- TODO: Add image for mobile only () -->
+      <div class="w-full lg:hidden h-full flex justify-center rounded-[10px] overflow-hidden">
+        <div class="relative w-full h-[200px] overflow-visible">
+          <img src="./assets/images-new/impressions/business-car-1.jpg"
+            alt="Airconditioning in een woning in de Zaanstreek"
+            class="w-full h-full object-cover object-center [overflow-clip-margin:unset]" loading="eager"
+            fetchpriority="high" decoding="async" />
+        </div>
       </div>
 
     </div>
@@ -370,7 +414,7 @@
       <div class="w-full flex flex-col gap-4 md:gap-6">
         <div class="flex flex-col gap-1">
           <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-700">
-            Bespaar energie met slimme airconditioning
+            Bespaar energie met slimme binnen- en buitenunits
           </h2>
         </div>
         <p class="text-sm sm:text-base font-medium leading-[2em] text-slate-700">
@@ -478,10 +522,11 @@
                   </div>
                 </div>
 
-                <div class="absolute inset-0 transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="LG DualCool Standard Plus" data-type="Single-split wandmodel"
-                  data-cooling="2,5 / 3,5 / 5,0 / 7,0 kW" data-room-size="van kleinere slaapkamers tot grotere woon- en werkruimtes, afhankelijk van vermogen, isolatie en gebruik" data-wifi="Ja" data-sound-indoor="afhankelijk"
-                  data-sound-outdoor="van uitvoering" data-heating="Ja"
+                <div class="absolute inset-0 transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="LG DualCool Standard Plus"
+                  data-type="Single-split wandmodel" data-cooling="2,5 / 3,5 / 5,0 / 7,0 kW"
+                  data-room-size="van kleinere slaapkamers tot grotere woon- en werkruimtes, afhankelijk van vermogen, isolatie en gebruik"
+                  data-wifi="Ja" data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De LG DualCool Standard Plus is een slimme keuze voor wie een stille en betaalbare airco zoekt voor slaapkamer, thuiskantoor of woonkamer. Dit model biedt een sterke prijs-kwaliteitverhouding en is geschikt voor zowel koelen als verwarmen."
                   data-usp-1="Sterke prijs-kwaliteitverhouding" data-usp-2="Geschikt voor dagelijks koelen en verwarmen"
                   data-usp-3="Stille werking voor slaapkamer of werkkamer"
@@ -489,23 +534,24 @@
                   <img src="./assets/images-new/products/aircos/lg-standard-plus.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="LG Artcool Mirror" data-type="Design wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="woonkamer, kantoor, salon, praktijkruimte of moderne leefruimte" data-wifi="Ja" data-sound-indoor="afhankelijk"
-                  data-sound-outdoor="van uitvoering" data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="LG Artcool Mirror" data-type="Design wandmodel"
+                  data-cooling="afhankelijk van uitvoering"
+                  data-room-size="woonkamer, kantoor, salon, praktijkruimte of moderne leefruimte" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De LG Artcool Mirror is een stijlvolle airco voor ruimtes waar uitstraling belangrijk is. Door het spiegelende front past dit model mooi in moderne interieurs, woonkamers, kantoren, salons en andere representatieve ruimtes."
-                  data-usp-1="Luxe spiegelend design"
-                  data-usp-2="Mooie keuze voor zichtbare plaatsing"
+                  data-usp-1="Luxe spiegelend design" data-usp-2="Mooie keuze voor zichtbare plaatsing"
                   data-usp-3="Geschikt voor koelen én verwarmen"
                   data-usp-4="Sterke keuze voor moderne woningen en bedrijfsruimtes"
                   data-usp-5="Past goed in woonkamers, kantoren en salons">
                   <img src="./assets/images-new/products/aircos/lg-artcool-mirror.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="Mitsubishi Heavy Industries SRK-ZS-WF" data-type="Single-split wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="slaapkamer, woonkamer, kantoor of grotere leefruimte" data-wifi="Ja" data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering"
-                  data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="Mitsubishi Heavy Industries SRK-ZS-WF"
+                  data-type="Single-split wandmodel" data-cooling="afhankelijk van uitvoering"
+                  data-room-size="slaapkamer, woonkamer, kantoor of grotere leefruimte" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De Mitsubishi Heavy Industries SRK-ZS-WF is een hoogwaardige wandairco met een strak ontwerp en meerdere kleuruitvoeringen. Dit model is geschikt voor wie comfort, uitstraling en prestaties wil combineren in één systeem."
                   data-usp-1="Verkrijgbaar in meerdere kleuren: Pure White, Black-White en Titan/Titanium"
                   data-usp-2="Strak wandmodel voor woonkamers, slaapkamers en kantoren"
@@ -515,53 +561,53 @@
                   <img src="./assets/images-new/products/aircos/mitsubishi-heavy-industries.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="Haier Pearl Premium" data-type="Single-split wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="slaapkamer, woonkamer, thuiskantoor of praktijkruimte" data-wifi="Ja" data-sound-indoor="afhankelijk"
-                  data-sound-outdoor="van uitvoering" data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="Haier Pearl Premium"
+                  data-type="Single-split wandmodel" data-cooling="afhankelijk van uitvoering"
+                  data-room-size="slaapkamer, woonkamer, thuiskantoor of praktijkruimte" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De Haier Pearl Premium is een moderne airco voor wie comfort, gebruiksgemak en een nette uitstraling belangrijk vindt. Dit model is geschikt voor woonkamers, slaapkamers en thuiskantoren waar een aangenaam binnenklimaat centraal staat."
                   data-usp-1="Moderne uitstraling met nette afwerking"
-                  data-usp-2="Comfortabele luchtverdeling in de ruimte"
-                  data-usp-3="Geschikt voor koelen én verwarmen"
+                  data-usp-2="Comfortabele luchtverdeling in de ruimte" data-usp-3="Geschikt voor koelen én verwarmen"
                   data-usp-4="Goede keuze voor dagelijks wooncomfort"
                   data-usp-5="Geschikt voor slaapkamer, woonkamer of thuiskantoor">
                   <img src="./assets/images-new/products/aircos/haier-pearl-premium.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="Daikin Comfora" data-type="Single-split wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="slaapkamer, werkkamer, woonkamer of kleinere bedrijfsruimte" data-wifi="Ja" data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering"
-                  data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="Daikin Comfora" data-type="Single-split wandmodel"
+                  data-cooling="afhankelijk van uitvoering"
+                  data-room-size="slaapkamer, werkkamer, woonkamer of kleinere bedrijfsruimte" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De Daikin Comfora is een praktische keuze voor wie een compacte en efficiënte airco zoekt. Dit model past goed in slaapkamers, werkkamers en woonruimtes waar comfort, eenvoud en een nette plaatsing belangrijk zijn."
-                  data-usp-1="Compact en strak wandmodel"
-                  data-usp-2="Geschikt voor koelen én verwarmen"
+                  data-usp-1="Compact en strak wandmodel" data-usp-2="Geschikt voor koelen én verwarmen"
                   data-usp-3="Goede keuze voor slaapkamer, kantoor of woonkamer"
                   data-usp-4="Efficiënte werking voor dagelijks gebruik"
                   data-usp-5="Praktische oplossing voor verschillende ruimtes">
                   <img src="./assets/images-new/products/aircos/daikin-comfora.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="Daikin Perfera" data-type="Single-split wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="slaapkamer, woonkamer, thuiskantoor of grotere leefruimte" data-wifi="Ja" data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering"
-                  data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="Daikin Perfera" data-type="Single-split wandmodel"
+                  data-cooling="afhankelijk van uitvoering"
+                  data-room-size="slaapkamer, woonkamer, thuiskantoor of grotere leefruimte" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De Daikin Perfera is een premium airco voor wie hoge eisen stelt aan comfort, energiezuinigheid en prestaties. Dit model is zeer geschikt voor intensief gebruik en wordt vaak gekozen voor woonkamers, slaapkamers en ruimtes waar koelen én verwarmen belangrijk zijn."
                   data-usp-1="Premium model met hoog comfortniveau"
-                  data-usp-2="Zeer geschikt voor koelen én efficiënt verwarmen"
-                  data-usp-3="Comfortabele luchtverdeling"
+                  data-usp-2="Zeer geschikt voor koelen én efficiënt verwarmen" data-usp-3="Comfortabele luchtverdeling"
                   data-usp-4="Stille werking voor dagelijks gebruik"
                   data-usp-5="Sterke keuze voor wie rendement en comfort belangrijk vindt">
                   <img src="./assets/images-new/products/aircos/daikin-perfera.jpg" alt="Airco placeholder"
                     class="h-full w-full object-cover [overflow-clip-margin:unset]" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide data-label="afhankelijk van uitvoering"
-                  data-model="Daikin Stylish" data-type="Design wandmodel"
-                  data-cooling="afhankelijk van uitvoering" data-room-size="woonkamer, kantoor, slaapkamer of designinterieur" data-wifi="Ja" data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering"
-                  data-heating="Ja"
+                <div class="absolute inset-0 hidden transition-opacity duration-300" data-ac-slide
+                  data-label="afhankelijk van uitvoering" data-model="Daikin Stylish" data-type="Design wandmodel"
+                  data-cooling="afhankelijk van uitvoering"
+                  data-room-size="woonkamer, kantoor, slaapkamer of designinterieur" data-wifi="Ja"
+                  data-sound-indoor="afhankelijk" data-sound-outdoor="van uitvoering" data-heating="Ja"
                   data-description="De Daikin Stylish is een luxe designairco voor wie techniek en uitstraling wil combineren. Door het compacte ontwerp en de verschillende kleuruitvoeringen past dit model mooi in zowel moderne als klassieke interieurs."
                   data-usp-1="Verkrijgbaar in meerdere kleuren: wit, zilver, blackwood en matzwart"
-                  data-usp-2="Hoogwaardig designmodel van Daikin"
-                  data-usp-3="Compacte en moderne uitstraling"
+                  data-usp-2="Hoogwaardig designmodel van Daikin" data-usp-3="Compacte en moderne uitstraling"
                   data-usp-4="Comfortabele luchtstroom en temperatuurregeling"
                   data-usp-5="Mooie keuze voor woonkamers, kantoren en zichtbare plaatsing">
                   <img src="./assets/images-new/products/aircos/daikin-stylish.jpg" alt="Airco placeholder"
@@ -688,11 +734,14 @@
                     data-ac-type>
                     Single-split wandmodel
                   </p>
-                  <h3 class="mt-2 text-xl font-bold leading-tight text-slate-600" data-ac-model>LG DualCool Standard Plus</h3>
+                  <h3 class="mt-2 text-xl font-bold leading-tight text-slate-600" data-ac-model>LG DualCool Standard
+                    Plus</h3>
                   <p class="mt-2 text-[13px] font-medium leading-relaxed text-slate-700/90" data-ac-description>
-                    De LG DualCool Standard Plus is een slimme keuze voor wie een stille en betaalbare airco zoekt voor slaapkamer, thuiskantoor of woonkamer. Dit model biedt een sterke prijs-kwaliteitverhouding en is geschikt voor zowel koelen als verwarmen.
+                    De LG DualCool Standard Plus is een slimme keuze voor wie een stille en betaalbare airco zoekt voor
+                    slaapkamer, thuiskantoor of woonkamer. Dit model biedt een sterke prijs-kwaliteitverhouding en is
+                    geschikt voor zowel koelen als verwarmen.
                   </p>
-                  
+
                   <h4 class="mt-5 text-[11px] font-semibold uppercase tracking-[0.11em] text-slate-700">Kenmerken
                   </h4>
                   <ul class="mt-2 flex flex-col gap-1 text-[13px] font-medium text-slate-700/90">
@@ -711,12 +760,19 @@
                 </div>
 
                 <div class="flex flex-col gap-1 mt-5 text-xs sm:text-sm font-medium text-slate-700/90">
-                  <p class="flex items-center justify-between border-b border-white/10">Energielabel: <span data-ac-energy-label>afhankelijk van uitvoering</span></p>
-                  <p class="flex items-center justify-between border-b border-white/10">Koelvermogen: <span data-ac-cooling>2,5 / 3,5 / 5,0 / 7,0 kW</span></p>
-                  <p class="flex flex-col border-b border-white/10 pb-1">Geschikt voor ruimtes: <span class="text-slate-600 mt-0.5" data-ac-room-size>Van kleinere slaapkamers tot grotere woon- en werkruimtes, afhankelijk van vermogen, isolatie en gebruik</span></p>
-                  <p class="flex items-center justify-between border-b border-white/10">Wifi/app-bediening: <span data-ac-wifi>Ja</span></p>
-                  <p class="flex items-center justify-between border-b border-white/10">Geluid binnen/buiten: <span data-ac-sound-detail>afhankelijk van uitvoering</span></p>
-                  <p class="flex items-center justify-between">Geschikt voor verwarmen: <span data-ac-heating>Ja</span></p>
+                  <p class="flex items-center justify-between border-b border-white/10">Energielabel: <span
+                      data-ac-energy-label>afhankelijk van uitvoering</span></p>
+                  <p class="flex items-center justify-between border-b border-white/10">Koelvermogen: <span
+                      data-ac-cooling>2,5 / 3,5 / 5,0 / 7,0 kW</span></p>
+                  <p class="flex flex-col border-b border-white/10 pb-1">Geschikt voor ruimtes: <span
+                      class="text-slate-600 mt-0.5" data-ac-room-size>Van kleinere slaapkamers tot grotere woon- en
+                      werkruimtes, afhankelijk van vermogen, isolatie en gebruik</span></p>
+                  <p class="flex items-center justify-between border-b border-white/10">Wifi/app-bediening: <span
+                      data-ac-wifi>Ja</span></p>
+                  <p class="flex items-center justify-between border-b border-white/10">Geluid binnen/buiten: <span
+                      data-ac-sound-detail>afhankelijk van uitvoering</span></p>
+                  <p class="flex items-center justify-between">Geschikt voor verwarmen: <span data-ac-heating>Ja</span>
+                  </p>
                 </div>
               </div>
 

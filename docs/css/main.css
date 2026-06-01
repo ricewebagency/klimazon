@@ -2335,6 +2335,10 @@ a {
   overflow: hidden;
 }
 
+.overflow-visible{
+  overflow: visible;
+}
+
 .overflow-x-auto{
   overflow-x: auto;
 }
@@ -4706,6 +4710,10 @@ a {
 
   .lg\:mt-8{
     margin-top: 2rem;
+  }
+
+  .lg\:block{
+    display: block;
   }
 
   .lg\:flex{
