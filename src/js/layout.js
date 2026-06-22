@@ -16,7 +16,7 @@ export function renderLayout() {
     headerHost.innerHTML = `
       <header data-header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-transparent">
         <div class="container-page h-16 flex items-center justify-between">
-          <a href="index.html" class="flex items-center gap-3">
+          <a href="./" class="flex items-center gap-3">
             <div class="h-10 w-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold">K</div>
             <div class="leading-tight">
               <div class="font-semibold">Klimazon</div>
@@ -25,11 +25,11 @@ export function renderLayout() {
           </a>
 
           <nav class="hidden md:flex items-center gap-6 text-sm">
-            <a data-nav href="diensten.html" class="hover:text-emerald-700">Diensten</a>
-            <a data-nav href="werkwijze.html" class="hover:text-emerald-700">Werkwijze</a>
-            <a data-nav href="projecten.html" class="hover:text-emerald-700">Projecten</a>
+            <a data-nav href="diensten" class="hover:text-emerald-700">Diensten</a>
+            <a data-nav href="zakelijke-diensten" class="hover:text-emerald-700">Zakelijke diensten</a>
+            <a data-nav href="projecten" class="hover:text-emerald-700">Projecten</a>
             <a data-nav href="tel:+31654216787" class="hover:text-emerald-700">Contact</a>
-            <a data-nav href="offerte.html" class="btn-primary">Offerte</a>
+            <a data-nav href="offerte" class="btn-primary">Offerte</a>
           </nav>
 
           <button
@@ -47,11 +47,11 @@ export function renderLayout() {
 
         <nav class="md:hidden hidden border-t border-slate-100 bg-white" data-mobile-menu>
           <div class="container-page py-4 flex flex-col gap-3 text-sm">
-            <a data-nav href="diensten.html" class="py-1">Diensten</a>
-            <a data-nav href="werkwijze.html" class="py-1">Werkwijze</a>
-            <a data-nav href="projecten.html" class="py-1">Projecten</a>
+            <a data-nav href="diensten" class="py-1">Diensten</a>
+            <a data-nav href="zakelijke-diensten" class="py-1">Zakelijke diensten</a>
+            <a data-nav href="projecten" class="py-1">Projecten</a>
             <a data-nav href="tel:+31654216787" class="py-1">Contact</a>
-            <a data-nav href="offerte.html" class="btn-primary w-fit">Offerte</a>
+            <a data-nav href="offerte" class="btn-primary w-fit">Offerte</a>
           </div>
         </nav>
       </header>
@@ -70,9 +70,9 @@ export function renderLayout() {
           <div class="md:justify-self-center">
             <div class="font-semibold text-slate-900">Pagina’s</div>
             <div class="mt-2 flex flex-col gap-2">
-              <a class="hover:text-emerald-700" href="diensten.html">Diensten</a>
-              <a class="hover:text-emerald-700" href="werkwijze.html">Werkwijze</a>
-              <a class="hover:text-emerald-700" href="projecten.html">Projecten</a>
+              <a class="hover:text-emerald-700" href="diensten">Diensten</a>
+              <a class="hover:text-emerald-700" href="zakelijke-diensten">Zakelijke diensten</a>
+              <a class="hover:text-emerald-700" href="projecten">Projecten</a>
             </div>
           </div>
 

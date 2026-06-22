@@ -73,18 +73,6 @@
       <div class="absolute inset-0 bg-gradient-to-b from-black/0 via-black/10 to-black/80 z-0"></div>
     </div>
 
-    <!-- Achtergrond boven (mobiel) -->
-    <div class="w-full lg:w-1/2 flex sm:hidden justify-center">
-      <div class="hero-image-wrap w-full max-w-[520px] max-h-[200px] overflow-hidden border-b-[1px] border-[#ffffff47]"
-        data-hero-image-wrap>
-        <div class="hero-image-skeleton" data-hero-skeleton aria-hidden="true"></div>
-        <img src="./assets/images/bg/404.png" alt="Pagina niet gevonden"
-          class="w-full h-full object-cover object-center [overflow-clip-margin:unset] opacity-0 transition-opacity duration-300"
-          data-hero-image loading="eager" fetchpriority="high" decoding="async" />
-        <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/10 to-black/20 z-0"></div>
-      </div>
-    </div>
-
     <!-- Background (lighter, responsive, less DOM-heavy) -->
     <div class="pointer-events-none absolute inset-0 z-0">
       <div class="absolute -top-10 left-1/2 w-[120rem] -translate-x-1/2 opacity-[0.03] skew-x-[-15deg]"
@@ -171,9 +159,9 @@
       </div>
 
       <!-- Service cards -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
 
-        <a href="./zonnepanelen.html"
+        <a href="./diensten/zonnepanelen"
           class="group flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-50">
             <img src="./assets/images/icons/solar-panels.svg" alt="Zonnepanelen" class="w-8 h-8 group-hover:opacity-70 transition" />
@@ -182,7 +170,7 @@
           <span class="text-xs text-[color:var(--kz-blue)] font-medium group-hover:opacity-70 transition">Meer info →</span>
         </a>
 
-        <a href="./airconditioning.html"
+        <a href="./diensten/airconditioning"
           class="group flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-50">
             <img src="./assets/images/icons/airconditioning.svg" alt="Airconditioning" class="w-8 h-8 group-hover:opacity-70 transition" />
@@ -191,7 +179,7 @@
           <span class="text-xs text-[color:var(--kz-blue)] font-medium group-hover:opacity-70 transition">Meer info →</span>
         </a>
 
-        <a href="./warmtepomp.html"
+        <a href="./diensten/warmtepomp"
           class="group flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-50">
             <img src="./assets/images/icons/heat-pump.svg" alt="Warmtepomp" class="w-8 h-8 group-hover:opacity-70 transition" />
@@ -200,7 +188,7 @@
           <span class="text-xs text-[color:var(--kz-blue)] font-medium group-hover:opacity-70 transition">Meer info →</span>
         </a>
 
-        <a href="./thuisbatterij.html"
+        <a href="./diensten/thuisbatterij"
           class="group flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-50">
             <img src="./assets/images/icons/home-battery.svg" alt="Thuisbatterij" class="w-8 h-8 group-hover:opacity-70 transition" />
@@ -209,8 +197,8 @@
           <span class="text-xs text-[color:var(--kz-blue)] font-medium group-hover:opacity-70 transition">Meer info →</span>
         </a>
 
-        <a href="./onderhoud-en-service.html"
-          class="group col-span-2 sm:col-span-1 flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+        <a href="./onderhoud-en-service"
+          class="group flex flex-col items-center gap-3 rounded-[8px] border border-slate-100 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-slate-50">
             <img src="./assets/images/icons/maintenance.svg" alt="Onderhoud & Service" class="w-8 h-8 group-hover:opacity-70 transition" />
           </div>

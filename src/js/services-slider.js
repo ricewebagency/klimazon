@@ -33,8 +33,8 @@
 
     // change href
     allServices.href = toBusiness
-      ? "./diensten-zakelijk.html"
-      : "./diensten.html";
+      ? "./diensten-zakelijk"
+      : "./diensten";
 
     void allServices.offsetHeight;
 

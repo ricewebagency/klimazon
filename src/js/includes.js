@@ -70,8 +70,8 @@ function normalizeInjectedRelativePaths(html, siteBasePath) {
   // Injected partials resolve URLs against the current page URL.
   // Convert "./..." references to site-base absolute paths so they work on deep routes and subpaths (e.g. /docs/).
   const base = siteBasePath.endsWith("/") ? siteBasePath : `${siteBasePath}/`;
-  return html.replace(/\b(href|src)=["']\.\/([^"']+)["']/g, (_match, attr, relPath) => {
-    return `${attr}="${base}${relPath}"`;
+  return html.replace(/\b(href|src)=["']\.\/([^"']*)["']/g, (_match, attr, relPath) => {
+    return `${attr}="${base}${relPath || ""}"`;
   });
 }
 

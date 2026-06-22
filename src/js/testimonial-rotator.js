@@ -19,10 +19,35 @@ import { AIRCO_TESTIMONIALS } from "./airco-testimonials.js";
   var activeRingColor = "rgb(255, 255, 255)";
   var inactiveRingColor = "rgba(255, 255, 255, 0.35)";
   var resizeTimer = null;
+  var pathPrefix = getPathPrefix();
 
   function normalizeIndex(index) {
     var length = entries.length;
     return ((index % length) + length) % length;
+  }
+
+  function getPathPrefix() {
+    var customPrefix = testimonials.getAttribute("data-testimonial-path-prefix");
+    if (customPrefix !== null && customPrefix !== "") {
+      return customPrefix;
+    }
+
+    var depthAttr = testimonials.getAttribute("data-testimonial-path-depth");
+    var depth = Number(depthAttr);
+    if (!Number.isFinite(depth) || depth < 0) {
+      return "";
+    }
+
+    return "../".repeat(Math.floor(depth));
+  }
+
+  function resolveSourcePath(sourcePath) {
+    if (!sourcePath || /^([a-z]+:|\/\/|\/)/i.test(sourcePath)) {
+      return sourcePath;
+    }
+
+    var normalizedPath = sourcePath.replace(/^\.\//, "");
+    return pathPrefix + normalizedPath;
   }
 
   function lockTestimonialsHeight() {
@@ -49,7 +74,7 @@ import { AIRCO_TESTIMONIALS } from "./airco-testimonials.js";
     quoteEl.textContent = entries[safeIndex].quote;
     authorEl.innerHTML = entries[safeIndex].author;
     if (entries[safeIndex].source) {
-      sourceEl.src = entries[safeIndex].source.src;
+      sourceEl.src = resolveSourcePath(entries[safeIndex].source.src);
       sourceEl.alt = entries[safeIndex].source.alt;
     }
 
