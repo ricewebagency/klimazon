@@ -4056,6 +4056,10 @@ a {
   color: rgb(255 255 255 / 0.9);
 }
 
+.focus\:underline:focus{
+  text-decoration-line: underline;
+}
+
 .focus\:opacity-80:focus{
   opacity: 0.8;
 }
