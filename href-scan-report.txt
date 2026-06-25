@@ -1,0 +1,104 @@
+Scanned: 14 HTML files in src/
+Total issues: 96
+Moved likely (exists elsewhere): 58
+Missing only (not found): 38
+
+=== MOVED LIKELY ===
+diensten/airconditioning.html:163 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/thuisbatterij.html:163 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/warmtepomp.html:163 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/zonnepanelen.html:180 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/zonnepanelen.html:187 | href=./subsidie-check.html | expected=diensten/subsidie-check.html | found_elsewhere=subsidie-check.html
+diensten/zonnepanelen.html:260 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/zonnepanelen.html:415 | href=./diensten.html | expected=diensten/diensten.html | found_elsewhere=diensten.html
+diensten/zonnepanelen.html:445 | href=./offerte.html | expected=diensten/offerte.html | found_elsewhere=offerte.html
+diensten/zonnepanelen.html:475 | href=./projecten.html | expected=diensten/projecten.html | found_elsewhere=projecten.html
+diensten.html:229 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+diensten.html:236 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+diensten.html:243 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+diensten.html:250 | href=./thuisbatterij.html | expected=thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+diensten.html:257 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+diensten.html:264 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+index.html:338 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+index.html:345 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+index.html:352 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+index.html:359 | href=./thuisbatterij.html | expected=thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+index.html:589 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+index.html:626 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+index.html:663 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+index.html:1091 | href=./verbruikscalculator-zonnepanelen.html | expected=verbruikscalculator-zonnepanelen.html | found_elsewhere=tools/verbruikscalculator-zonnepanelen.html
+partials/footer.html:61 | href=./offerte.html | expected=partials/offerte.html | found_elsewhere=offerte.html
+partials/footer.html:65 | href=./subsidie-check.html | expected=partials/subsidie-check.html | found_elsewhere=subsidie-check.html
+partials/footer.html:117 | href=./zonnepanelen.html | expected=partials/zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+partials/footer.html:124 | href=./airconditioning.html | expected=partials/airconditioning.html | found_elsewhere=diensten/airconditioning.html
+partials/footer.html:131 | href=./warmtepomp.html | expected=partials/warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+partials/footer.html:138 | href=./thuisbatterij.html | expected=partials/thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+partials/footer.html:152 | href=./diensten.html | expected=partials/diensten.html | found_elsewhere=diensten.html
+partials/footer.html:159 | href=./diensten-zakelijk.html | expected=partials/diensten-zakelijk.html | found_elsewhere=diensten-zakelijk.html
+partials/header.html:125 | href=./diensten.html | expected=partials/diensten.html | found_elsewhere=diensten.html
+partials/header.html:132 | href=./zonnepanelen.html | expected=partials/zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+partials/header.html:135 | href=./airconditioning.html | expected=partials/airconditioning.html | found_elsewhere=diensten/airconditioning.html
+partials/header.html:138 | href=./warmtepomp.html | expected=partials/warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+partials/header.html:141 | href=./thuisbatterij.html | expected=partials/thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+partials/header.html:167 | href=./diensten-zakelijk.html | expected=partials/diensten-zakelijk.html | found_elsewhere=diensten-zakelijk.html
+partials/header.html:190 | href=./projecten.html | expected=partials/projecten.html | found_elsewhere=projecten.html
+partials/header.html:203 | href=./offerte.html | expected=partials/offerte.html | found_elsewhere=offerte.html
+partials/header.html:248 | href=./diensten.html | expected=partials/diensten.html | found_elsewhere=diensten.html
+partials/header.html:250 | href=./zonnepanelen.html | expected=partials/zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+partials/header.html:251 | href=./airconditioning.html | expected=partials/airconditioning.html | found_elsewhere=diensten/airconditioning.html
+partials/header.html:253 | href=./warmtepomp.html | expected=partials/warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+partials/header.html:255 | href=./thuisbatterij.html | expected=partials/thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+partials/header.html:269 | href=./diensten-zakelijk.html | expected=partials/diensten-zakelijk.html | found_elsewhere=diensten-zakelijk.html
+partials/header.html:283 | href=./projecten.html | expected=partials/projecten.html | found_elsewhere=projecten.html
+partials/header.html:288 | href=./offerte.html | expected=partials/offerte.html | found_elsewhere=offerte.html
+projecten.html:251 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+projecten.html:280 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+projecten.html:309 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+projecten.html:338 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+projecten.html:367 | href=./thuisbatterij.html | expected=thuisbatterij.html | found_elsewhere=diensten/thuisbatterij.html
+projecten.html:425 | href=./airconditioning.html | expected=airconditioning.html | found_elsewhere=diensten/airconditioning.html
+projecten.html:454 | href=./warmtepomp.html | expected=warmtepomp.html | found_elsewhere=diensten/warmtepomp.html
+projecten.html:483 | href=./zonnepanelen.html | expected=zonnepanelen.html | found_elsewhere=diensten/zonnepanelen.html
+tools/verbruikscalculator-zonnepanelen.html:186 | href=./subsidie-check.html | expected=tools/subsidie-check.html | found_elsewhere=subsidie-check.html
+tools/verbruikscalculator-zonnepanelen.html:584 | href=./offerte.html | expected=tools/offerte.html | found_elsewhere=offerte.html
+tools/verbruikscalculator-zonnepanelen.html:590 | href=./subsidie-check.html | expected=tools/subsidie-check.html | found_elsewhere=subsidie-check.html
+
+=== MISSING ONLY ===
+diensten-zakelijk.html:231 | href=./airconditioning-zakelijk.html | expected=airconditioning-zakelijk.html
+diensten-zakelijk.html:238 | href=./zonnepanelen-zakelijk.html | expected=zonnepanelen-zakelijk.html
+diensten-zakelijk.html:245 | href=./warmtepomp-zakelijk.html | expected=warmtepomp-zakelijk.html
+diensten-zakelijk.html:253 | href=./thuisbatterij-zakelijk.html | expected=thuisbatterij-zakelijk.html
+diensten-zakelijk.html:260 | href=./warmtepomp-zakelijk.html | expected=warmtepomp-zakelijk.html
+diensten-zakelijk.html:268 | href=./airconditioning-zakelijk.html | expected=airconditioning-zakelijk.html
+diensten-zakelijk.html:484 | href=./contact.html | expected=contact.html
+diensten.html:475 | href=./contact.html | expected=contact.html
+index.html:231 | href=./afspraak-maken.html | expected=afspraak-maken.html
+index.html:255 | href=./afspraak-maken.html | expected=afspraak-maken.html
+index.html:366 | href=./onderhoud.html | expected=onderhoud.html
+index.html:407 | href=./zonnepanelen-zakelijk.html | expected=zonnepanelen-zakelijk.html
+index.html:416 | href=./airconditioning-zakelijk.html | expected=airconditioning-zakelijk.html
+index.html:424 | href=./thuisbatterij-zakelijk.html | expected=thuisbatterij-zakelijk.html
+index.html:432 | href=./warmtepomp-zakelijk.html | expected=warmtepomp-zakelijk.html
+index.html:440 | href=./luchtgordijn-zakelijk.html | expected=luchtgordijn-zakelijk.html
+index.html:1006 | href=./contact.html | expected=contact.html
+offerte.html:325 | href=./privacy.html | expected=privacy.html
+partials/footer.html:145 | href=./onderhoud.html | expected=partials/onderhoud.html
+partials/footer.html:173 | href=./contact.html | expected=partials/contact.html
+partials/footer.html:256 | href=./privacy.html | expected=partials/privacy.html
+partials/footer.html:257 | href=./voorwaarden.html | expected=partials/voorwaarden.html
+partials/header.html:145 | href=./onderhoud-en-service.html | expected=partials/onderhoud-en-service.html
+partials/header.html:174 | href=./zonnepanelen-zakelijk.html | expected=partials/zonnepanelen-zakelijk.html
+partials/header.html:177 | href=./airconditioning-zakelijk.html | expected=partials/airconditioning-zakelijk.html
+partials/header.html:180 | href=./warmtepomp-zakelijk.html | expected=partials/warmtepomp-zakelijk.html
+partials/header.html:183 | href=./thuisbatterij-zakelijk.html | expected=partials/thuisbatterij-zakelijk.html
+partials/header.html:194 | href=./over-ons.html | expected=partials/over-ons.html
+partials/header.html:198 | href=./contact.html | expected=partials/contact.html
+partials/header.html:257 | href=./onderhoud-en-service.html | expected=partials/onderhoud-en-service.html
+partials/header.html:271 | href=./zonnepanelen-zakelijk.html | expected=partials/zonnepanelen-zakelijk.html
+partials/header.html:273 | href=./airconditioning-zakelijk.html | expected=partials/airconditioning-zakelijk.html
+partials/header.html:276 | href=./warmtepomp-zakelijk.html | expected=partials/warmtepomp-zakelijk.html
+partials/header.html:279 | href=./thuisbatterij-zakelijk.html | expected=partials/thuisbatterij-zakelijk.html
+partials/header.html:284 | href=./over-ons.html | expected=partials/over-ons.html
+partials/header.html:286 | href=./contact.html | expected=partials/contact.html
+projecten.html:396 | href=./airconditioning-zakelijk.html | expected=airconditioning-zakelijk.html
+subsidie-check.html:390 | href=./privacy.html | expected=privacy.html

@@ -177,7 +177,7 @@
         if (responseData.success) {
           contactForm.reset();
           // Redirect naar bedankt pagina
-          window.location.href = 'bedankt.html';
+          window.location.href = 'bedankt';
         } else {
           const errorMsg = responseData.message || 
             'Er is iets misgegaan. Probeer het opnieuw.';
