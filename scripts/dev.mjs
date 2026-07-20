@@ -25,6 +25,23 @@ function copyDir(from, to) {
   cpSync(from, to, { recursive: true, force: true });
 }
 
+function syncTree(fromDir, toDir) {
+  ensureDirs();
+  mkdirSync(toDir, { recursive: true });
+
+  for (const entry of readdirSync(fromDir, { withFileTypes: true })) {
+    const sourcePath = path.join(fromDir, entry.name);
+    const targetPath = path.join(toDir, entry.name);
+
+    if (entry.isDirectory()) {
+      syncTree(sourcePath, targetPath);
+      continue;
+    }
+
+    cpSync(sourcePath, targetPath, { force: true });
+  }
+}
+
 function removePath(p) {
   if (existsSync(p)) rmSync(p, { recursive: true, force: true });
 }
@@ -32,11 +49,7 @@ function removePath(p) {
 function initialSync() {
   ensureDirs();
 
-  for (const file of readdirSync(SRC)) {
-    if (file.endsWith(".html")) {
-      copyFile(path.join(SRC, file), path.join(DOCS, file));
-    }
-  }
+  syncTree(SRC, DOCS);
 
   for (const file of ["robots.txt", "sitemap.xml", "site.webmanifest"]) {
     const from = path.join(SRC, file);

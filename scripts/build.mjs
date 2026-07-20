@@ -11,16 +11,24 @@ function clean() {
   mkdirSync(`${DOCS}/assets`, { recursive: true });
 }
 
-function copyStatic() {
-  // kopieer alle .html bestanden in src root
-  for (const file of readdirSync(SRC)) {
-    if (file.endsWith(".html")) {
-      cpSync(`${SRC}/${file}`, `${DOCS}/${file}`, { force: true });
-    }
-  }
+function syncTree(fromDir, toDir) {
+  mkdirSync(toDir, { recursive: true });
 
-  cpSync(`${SRC}/js`, `${DOCS}/js`, { recursive: true, force: true });
-  cpSync(`${SRC}/assets`, `${DOCS}/assets`, { recursive: true, force: true });
+  for (const entry of readdirSync(fromDir, { withFileTypes: true })) {
+    const sourcePath = `${fromDir}/${entry.name}`;
+    const targetPath = `${toDir}/${entry.name}`;
+
+    if (entry.isDirectory()) {
+      syncTree(sourcePath, targetPath);
+      continue;
+    }
+
+    cpSync(sourcePath, targetPath, { force: true });
+  }
+}
+
+function copyStatic() {
+  syncTree(SRC, DOCS);
 
   // kopieer root-bestanden die direct in docs moeten staan
   for (const file of ["sitemap.xml", "robots.txt", "site.webmanifest"]) {

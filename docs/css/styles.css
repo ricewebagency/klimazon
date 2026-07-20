@@ -1,0 +1,650 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1) Base: één bron van waarheid voor je design tokens */
+@layer base {
+  :root {
+    /* Gebaseerd op je logo (dominante kleuren) */
+    --kz-navy: #101030;
+    /* donkerblauw (tekst/headers) */
+    --kz-lightgrey: #7e7e7e;
+    /* light grey (tekst) */
+    --kz-blue: #0090D0;
+    /* helder blauw (accent) */
+    --kz-green: #60A020;
+    /* groen (accent) */
+    --kz-orange: #C04020;
+    /* oranje (accent/cta) */
+    --kz-yellow: #E2BF00;
+    /* geel (accent/cta) */
+    --kz-darkerblue: #2a55a2;
+    /* darker blue (accent/cta) */
+    --kz-lightblue: #87c9ff;
+    /* lighter blue (accent/cta) */
+
+    /* Nieuw (extra unieke kleuren) */
+    --kz-teal: #1AA6A6;
+    --kz-purple: #7A3FF2;
+    --kz-pink: #E84D8A;
+    --kz-red: #D63A3A;
+    --kz-lime: #86C231;
+    --kz-cyan: #19B7E6;
+    --kz-violet: #5B4BDB;
+    --kz-slate: #4B5563;
+    --kz-amber: #F59E0B;
+    --kz-indigo: #4338CA;
+    --kz-rose: #F43F5E;
+    --kz-emerald: #10B981;
+    --kz-sky: #0EA5E9;
+    --kz-fuchsia: #C026D3;
+    --kz-brown: #8B5E34;
+    --kz-olive: #6B8E23;
+    --kz-aqua: #22C1C3;
+    --kz-grape: #6D28D9;
+    --kz-magenta: #D946EF;
+    --kz-charcoal: #374151;
+
+    /* Core brand */
+    --kz-primary: var(--kz-darkerblue);
+    --kz-secondary: var(--kz-green);
+
+    /* Neutrals */
+    --kz-bg: #ffffff;
+    --kz-surface: #ffffff;
+    --kz-surface-2: rgba(255, 255, 255, .92);
+    /* translucent panels */
+    --kz-text: var(--kz-darkerblue);
+    --kz-muted: rgba(16, 16, 48, .72);
+    --kz-muted-2: rgba(16, 16, 48, .55);
+
+    /* Borders / shadow */
+    --kz-border: rgba(16, 16, 48, .12);
+    --kz-border-strong: rgba(16, 16, 48, .18);
+    --kz-shadow-1: 0 10px 30px rgba(16, 16, 48, .08);
+
+    /* Focus (kies 1) */
+    --kz-focus: var(--kz-primary);
+    --kz-focus-ring: rgba(42, 85, 162, .22);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+  }
+
+  body {
+    font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--kz-text);
+    background: var(--kz-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Links default iets netter */
+  a {
+    color: inherit;
+  }
+}
+
+/* 2) Components: alles verwijst naar tokens (geen emerald/slate) */
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-12 lg:py-20;
+  }
+
+  .h1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight;
+    color: var(--kz-navy);
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight;
+    color: var(--kz-navy);
+  }
+
+  .muted {
+    color: var(--kz-muted);
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold;
+    border: 1px solid var(--kz-border);
+    background: var(--kz-bg);
+    color: rgba(16, 16, 48, .80);
+  }
+
+  .card {
+    @apply relative rounded-2xl p-6 shadow-sm;
+    background: var(--kz-bg);
+    border: 1px solid var(--kz-border);
+  }
+
+  .card-link {
+    @apply transition;
+  }
+
+  .card-link:hover {
+    border-color: var(--kz-border-strong);
+    @apply shadow-md;
+  }
+
+  .site-header {
+    @apply sticky top-0 z-50 backdrop-blur;
+    background: rgba(255, 255, 255, .90);
+    border-bottom: 1px solid var(--kz-border);
+  }
+
+  .nav-link {
+    @apply text-xs font-semibold rounded-xl px-3 py-2 transition;
+    color: var(--kz-lightgrey);
+  }
+
+  .nav-link:hover {
+    color: rgba(0, 0, 0, .90);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-2xl text-sm font-semibold shadow-sm transition;
+    background: var(--kz-darkerblue);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    opacity: .92;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-2xl text-sm font-semibold transition;
+    background: #fff;
+    color: var(--kz-navy);
+    border: 1px solid var(--kz-border);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(16, 16, 48, .03);
+    border-color: var(--kz-border-strong);
+  }
+
+  .icon-badge {
+    @apply inline-flex items-center justify-center h-10 w-10 rounded-full;
+    background: rgba(0, 144, 208, .10);
+    /* kz-blue tint */
+    color: rgba(0, 144, 208, .95);
+    border: 1px solid rgba(0, 144, 208, .18);
+  }
+
+  .input {
+    @apply w-full rounded-xl px-4 py-3 text-sm transition;
+    background: #fff;
+    border: 1px solid var(--kz-border);
+  }
+
+  .chip {
+    @apply flex items-center gap-2 rounded-xl px-3 py-2 transition;
+    background: #fff;
+    border: 1px solid var(--kz-border);
+  }
+
+  .chip-link:hover {
+    background: rgba(16, 16, 48, .03);
+    border-color: var(--kz-border-strong);
+  }
+
+  .trust-row {
+    @apply mt-6 flex flex-wrap gap-2;
+  }
+
+  .trust-item {
+    @apply text-xs sm:text-sm rounded-full px-3 py-2;
+    background: #fff;
+    border: 1px solid var(--kz-border);
+    color: rgba(16, 16, 48, .80);
+  }
+
+  .cta {
+    @apply rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:items-center md:justify-between;
+    background: #fff;
+    border: 1px solid var(--kz-border);
+  }
+
+  .img-logo {
+    @apply h-9 w-auto max-w-[160px] object-contain;
+  }
+
+  .img-hero {
+    @apply w-full max-h-[420px] object-cover rounded-2xl;
+  }
+
+  .img-card {
+    @apply w-full h-[180px] object-cover rounded-xl;
+  }
+
+  .img-project {
+    @apply w-full h-[220px] object-cover rounded-xl;
+  }
+
+  /* 3) Toegankelijke focus states: consistent en merk-kleur */
+  .btn-primary,
+  .btn-secondary,
+  .chip,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus:outline-none;
+  }
+
+  /* 5) Marquee animation */
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+
+    /* track bestaat uit 2 identieke helften */
+  }
+
+  .marquee {
+    --gap: 2rem;
+    --logo-h: 80px;
+    --tile-h: 115px;
+    --duration: 22s;
+  }
+
+  @media (min-width: 640px) {
+    .marquee {
+      --gap: 3rem;
+      --logo-h: 110px;
+      --tile-h: 92px;
+      --duration: 24s;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .marquee {
+      --gap: 3.5rem;
+      --logo-h: 110px;
+      --tile-h: 104px;
+      --duration: 26s;
+    }
+  }
+
+  .marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll var(--duration) linear infinite;
+    will-change: transform;
+    gap: var(--gap);
+    animation-play-state: paused;
+  }
+
+  .marquee.is-ready .marquee__track {
+    animation-play-state: running;
+  }
+
+  .marquee__content {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  .logo-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-tile img {
+    height: var(--logo-h);
+    width: auto;
+    max-width: 180px;
+    /* voorkomt extreem brede logo’s */
+    object-fit: contain;
+    opacity: 0.88;
+    filter: grayscale(0%);
+    transition: transform 180ms ease, opacity 180ms ease, filter 180ms ease;
+  }
+
+  .logo-tile img:hover {
+    opacity: 1;
+    filter: grayscale(20%);
+    transform: scale(1.04);
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__track {
+      animation: none;
+      transform: none;
+    }
+  }
+
+  /* 6) Services */
+  .service-btn {
+    @apply flex w-20 h-20 md:h-[100px] md:w-[100px] items-center justify-center rounded-[5px] border border-slate-200 bg-white p-2 mt-2 transition-all duration-200 hover:-translate-y-1 hover:border-slate-300 hover:bg-white hover:shadow-md skew-x-[-5deg] focus:outline-none;
+  }
+
+  .service-btn img {
+    @apply skew-x-[5deg]
+  }
+
+  .nav-btn {
+    @apply absolute top-1/2 -translate-y-1/2 rounded-full border border-slate-200 bg-white px-3 py-2 shadow hover:bg-slate-50;
+    @apply z-10;
+  }
+
+  /* Dots */
+  .dot {
+    @apply h-2 w-2 rounded-full bg-slate-300 transition-all duration-200;
+  }
+
+  .dot.is-active {
+    @apply w-6;
+  }
+
+  .dot.is-active:not(.is-business) {
+    background: var(--kz-darkerblue);
+  }
+
+  .dot.is-active.is-business {
+    background: var(--kz-blue);
+  }
+
+  .nav-btn.is-disabled,
+  .nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .nav-btn.static {
+    position: static;
+    transform: none;
+  }
+
+  /* All services button */
+  #allServicesBtn::before {
+    content: "Bekijk alle diensten";
+  }
+
+  #allServicesBtn.is-business {
+    background: var(--kz-blue);
+  }
+
+  #allServicesBtn:not(.is-business) {
+    background: var(--kz-darkerblue);
+  }
+
+  #allServicesBtn.is-business::before {
+    content: "Bekijk zakelijke diensten";
+    color: white;
+  }
+
+  /* Badge in service cards */
+  .badge {
+    @apply rounded-full bg-white
+           px-3 py-1 text-[12px] font-medium
+           capitalize tracking-wider text-slate-600;
+  }
+
+  /* Hide horizontal scrollbar but keep scrolling */
+  #servicesTrack .overflow-x-auto {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE / Edge legacy */
+  }
+
+  #servicesTrack .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+    /* Chrome / Safari */
+  }
+
+  #servicesCard {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  /* Zorg dat content boven de gradient zit */
+  #servicesCard>* {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Gradient layer */
+  #servicesCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+        var(--kz-darkerblue),
+        var(--kz-blue));
+    opacity: 0;
+    transition: opacity 400ms ease;
+    z-index: 0;
+  }
+
+  /* Ensure icons take brand color (if your service-btn doesn't already set it) */
+  .service-btn svg {
+    stroke: var(--kz-primary);
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .navbar-skeleton {
+    border-bottom: 1px solid var(--kz-border);
+    background: #fff;
+  }
+
+  #header {
+    min-height: 96px;
+  }
+
+  #header:empty::before {
+    content: "";
+    display: block;
+    height: 96px;
+    border-bottom: 1px solid var(--kz-border);
+    background:
+      linear-gradient(to right, var(--kz-darkerblue), var(--kz-blue)) 0 0 / 100% 32px no-repeat,
+      linear-gradient(90deg, #e2e8f0 0%, #f8fafc 45%, #e2e8f0 100%) 1rem 44px / 170px 16px no-repeat,
+      linear-gradient(90deg, #e2e8f0 0%, #f8fafc 45%, #e2e8f0 100%) calc(100% - 4rem) 44px / 40px 40px no-repeat,
+      #fff;
+    background-size: 100% 32px, 200% 16px, 200% 40px, auto;
+    animation: navbar-skeleton-shimmer 1.15s linear infinite;
+  }
+
+  .navbar-skeleton__topbar {
+    height: 32px;
+    background: linear-gradient(to right, var(--kz-darkerblue), var(--kz-blue));
+    opacity: 0.9;
+  }
+
+  .navbar-skeleton__nav {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .navbar-skeleton__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
+  .navbar-skeleton__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background: #e2e8f0;
+    flex-shrink: 0;
+  }
+
+  .navbar-skeleton__brand-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 120px;
+  }
+
+  .navbar-skeleton__line {
+    width: 140px;
+    height: 10px;
+    border-radius: 999px;
+    background: #e2e8f0;
+  }
+
+  .navbar-skeleton__line--small {
+    width: 110px;
+    height: 8px;
+  }
+
+  .navbar-skeleton__links {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-skeleton__pill {
+    width: 78px;
+    height: 14px;
+    border-radius: 999px;
+    background: #e2e8f0;
+  }
+
+  .navbar-skeleton__menu-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background: #e2e8f0;
+    flex-shrink: 0;
+  }
+
+  .navbar-skeleton__shimmer {
+    background-image: linear-gradient(90deg, #e2e8f0 0%, #f8fafc 45%, #e2e8f0 100%);
+    background-size: 200% 100%;
+    animation: navbar-skeleton-shimmer 1.15s linear infinite;
+  }
+
+  .hero-image-wrap {
+    position: relative;
+  }
+
+  .hero-image-skeleton {
+    position: absolute;
+    inset: 0;
+    background: #d9e0ea;
+    overflow: hidden;
+    transition: opacity 240ms ease;
+  }
+
+  .hero-image-skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: hero-image-shimmer 1.1s linear infinite;
+  }
+
+  /* Background text: langzaam grow -> pauze -> shrink (herbruikbaar) */
+  .grow-pause-shrink {
+    --grow-duration: 8s;
+    --pause-duration: 4s;
+    --scale-from: 1;
+    --scale-to: 1.1;
+    --cycle-duration: calc((var(--grow-duration) * 2) + var(--pause-duration));
+    transform-origin: center center;
+    animation: grow-pause-shrink var(--cycle-duration) ease-in-out infinite;
+    will-change: transform;
+  }
+
+  @media (min-width: 1024px) {
+    #header:empty::before {
+      background:
+        linear-gradient(to right, var(--kz-darkerblue), var(--kz-blue)) 0 0 / 100% 32px no-repeat,
+        linear-gradient(90deg, #e2e8f0 0%, #f8fafc 45%, #e2e8f0 100%) 1rem 44px / 170px 16px no-repeat,
+        linear-gradient(90deg, #e2e8f0 0%, #f8fafc 45%, #e2e8f0 100%) 56% 48px / 400px 14px no-repeat,
+        #fff;
+      background-size: 100% 32px, 200% 16px, 200% 14px, auto;
+    }
+
+    .navbar-skeleton__links {
+      display: flex;
+    }
+
+    .navbar-skeleton__menu-btn {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .grow-pause-shrink {
+      animation: none;
+    }
+
+    #header:empty::before {
+      animation: none;
+    }
+
+    .navbar-skeleton__shimmer {
+      animation: none;
+    }
+
+    .hero-image-skeleton::after {
+      animation: none;
+    }
+  }
+
+  @keyframes navbar-skeleton-shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  @keyframes hero-image-shimmer {
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes grow-pause-shrink {
+    0% {
+      transform: scale(var(--scale-from));
+    }
+
+    40% {
+      transform: scale(var(--scale-to));
+    }
+
+    60% {
+      transform: scale(var(--scale-to));
+    }
+
+    100% {
+      transform: scale(var(--scale-from));
+    }
+  }
+}
