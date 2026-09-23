@@ -2873,6 +2873,10 @@ a {
   padding: 1.5rem;
 }
 
+.p-\[0\.4rem\]{
+  padding: 0.4rem;
+}
+
 .p-\[4px\]{
   padding: 4px;
 }
